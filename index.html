@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+   
+        h2 {
+            color: black;
+            text-align: center;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+        form {
+            text-align: center;
+
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div style="display: flex;justify-content: center;align-items: center;">
+        <img src=ichigo.png width="500" height="320">
+</div>
+
+    <div class="'login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Usuário" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <button id="openPageButton">Entrar</button> 
+        </form>
+
+    </div>
+
+
+    <script>
+        document.getElementById('openPageButton').addEventListener('click', function() {
+            let newWindow = window.open('open.html', '_blank', 'noopener,noreferrer');
+        });
+    </script>
+
+</body>
+</html>
